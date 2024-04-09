@@ -1,4 +1,4 @@
-package com.hydroyura.tutorials.springauthserver.authserver.configs;
+package com.hydroyura.tutorials.springauthserver.catalog;
 
 import com.hydroyura.tutorials.springauthserver.sharedlibs.AbstractLogFilter;
 import org.slf4j.LoggerFactory;
@@ -8,9 +8,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Order(Ordered.HIGHEST_PRECEDENCE)
-public class LogFilter extends AbstractLogFilter {
+public class CatalogLogFilter extends AbstractLogFilter {
     @Override
     protected void initLogger() {
-        LOG = LoggerFactory.getLogger("AUTH-SERVER");
+        this.LOG = LoggerFactory.getLogger("CATALOG_APP");
     }
 }
